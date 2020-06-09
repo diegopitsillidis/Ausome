@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AUSOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" media="all" href="css/styleabout.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/stylecontact.css" />
+
+</head>
+<body>
+
+<!-------------MENU   https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp--------------->
+
+<nav class="navbar navbar-transparent navbar-fixed-top animated fadeIn">
+	<div class="topnav" id="myTopnav">
+		<a href="index.html" class="logo"><h4><b>AUSOME</b></h4></a>
+		<a href="testimonials.html"><h4>Testimonials</h4></a>
+		<a href="careers.html"><h4>Careers</h4></a>
+		<a href="about.html"><h4>About</h4></a>
+		<a href="contact.html" role="button" class="btn btn-info btn-lg contact">Contact Us</a>
+		<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+</nav>
+
+<!-------------Script for dropdown for mobile--------------->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+</script>
+<!------------------------------------------>
+
+<!-----------------------Script for menu transition--------------------------------->
+<script>
+var $document = $(document),
+	$element = $('.navbar'),
+	navbarDefault = 'navbar-default';
+	navbarTransparent = 'navbar-transparent';
+	
+	fadeInDown = 'fadeInDown';
+	
+$document.scroll(function() 
+{
+	if ($document.scrollTop() >=100) 
+	{
+		$element.addClass(navbarDefault);
+		$element.removeClass(navbarTransparent);
+		
+		$element.addClass(fadeInDown);
+	}
+	else
+	{
+		$element.addClass(navbarTransparent);
+		$element.removeClass(navbarDefault);
+		
+		$element.removeClass(fadeInDown);
+	}
+});
+</script>
+<!------------------------------------------>
+
+<!--------------WELCOME VIDEO          https://startbootstrap.com/snippets/video-header/ ----------------->
+<header>
+  <div class="overlay">
+		<img src="media/contact.jpg" alt="careers" class="img-responsive">
+  </div>
+</header>
+<!-------------------------------------------------------->
+
+
+<!-----------------------CONTENT--------------------------------->
+  <div class="overlay" style="background-color:#D7F9FB; max-height: 500px;">
+  <div class="container">
+    <div class="col-sm-12"><h1>CONTACT</h1>
+	<hr style="border-width: 2px; border-color: #F76D16;">
+	<h3>
+For information or to find out how we can help you and your child, you can contact us using the form below, email or call us.
+<br>
+<br>
+Email us at: enquires@ausome.com
+<br>
+Call us at: 07716377234
+<br>
+Address:41 Queen Street, Pontypridd, Cardiff
+	</h3>
+	
+</div>
+  </div>
+  </div>
+  
+  
+<!-----https://www.w3schools.com/howto/howto_css_contact_form.asp-->
+  <content="width=device-width, initial-scale=1">
+
+
+<div class="container" style="background-color: #f2f2f2;">
+<h3 style="margin-left:20px; color: #05719D">Contact Form</h3>
+<div class="row contactform">
+<div class="col-sm-6">
+  <form action="/action_page.php">
+    <label for="fname">Full Name (required)</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Email (required)</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your email..">
+	
+
+    <label for="country">Subject</label>
+    <select id="country" name="country">
+      <option value="General-question">General question</option>
+      <option value="Business-Enquiry">Business Enquiry</option>
+      <option value="other">other</option>
+    </select>
+
+    <label for="Your-Message">Your Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+<!--google map          https://www.w3schools.com/graphics/google_maps_basic.asp-->
+<div class="col-sm-6" style="padding:30px">
+    <!--The div element for the map -->
+    <div id="map" class="container"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 51.59146917904086, lng: -3.3289861679077153};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDsPxFcVM-IuUVPOOhQj73yUdKItccZgE&callback=initMap">
+    </script>
+</div>
+</div>
+</div>
+<!-------------------------------------------------------->
+</body>
+<!-------------------------------------------------------->
+
+
+<!--------------------FOOTER------------------------------------>
+<footer>
+	<div class="container-fluid sec-1 text-center">
+		<p>©2019 Diego Pitsillidis</p>
+	</div>
+</footer
+
+</html>

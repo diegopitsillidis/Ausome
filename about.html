@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AUSOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" media="all" href="css/styleabout.css" />
+
+</head>
+<body>
+
+<!-------------MENU--------------->
+
+<nav class="navbar navbar-transparent navbar-fixed-top animated fadeIn">
+	<div class="topnav" id="myTopnav">
+		<a href="index.html" class="logo"><h4><b>AUSOME</b></h4></a>
+		<a href="testimonials.html"><h4>Testimonials</h4></a>
+		<a href="careers.html"><h4>Careers</h4></a>
+		<a href="about.html"><h4>About</h4></a>
+		<a href="contact.html" role="button" class="btn btn-info btn-lg contact">Contact Us</a>
+		<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+</nav>
+
+<!-------------Script for dropdown for mobile--------------->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+</script>
+<!------------------------------------------>
+
+<!-----------------------Script for menu transition--------------------------------->
+<script>
+var $document = $(document),
+	$element = $('.navbar'),
+	navbarDefault = 'navbar-default';
+	navbarTransparent = 'navbar-transparent';
+	
+	fadeInDown = 'fadeInDown';
+	
+$document.scroll(function() 
+{
+	if ($document.scrollTop() >=100) 
+	{
+		$element.addClass(navbarDefault);
+		$element.removeClass(navbarTransparent);
+		
+		$element.addClass(fadeInDown);
+	}
+	else
+	{
+		$element.addClass(navbarTransparent);
+		$element.removeClass(navbarDefault);
+		
+		$element.removeClass(fadeInDown);
+	}
+});
+</script>
+<!------------------------------------------>
+
+<!--------------WELCOME VIDEO        https://startbootstrap.com/snippets/video-header/----------------->
+<header>
+  <div class="overlay">
+		<img src="media/about.jpg" alt="careers" class="img-responsive">
+  </div>
+</header>
+<!-------------------------------------------------------->
+
+
+<!-----------------------CONTENT--------------------------------->
+  <div class="overlay" style="background-color:#D7F9FB; max-height: 500px;">
+  <div class="container">
+    <div class="col-sm-12"><h2>Who are we?</h2>
+	<p>
+Qualified and professional behavioural consultant that aims to provide world-class services to support children with emotional and behavioural difficulties as well as children with autism in living a fulfilled and independent lives.
+	</p>
+	</div>
+	</div>
+  </div>
+  
+  <div class="overlay"style="background-color:#A0D5E8;">
+  <div class="container">
+    <div class="col-sm-12"><h2>Why pick us?</h2>
+	<p>
+The behavioural consultant is a passionate individual who is currently in the process of receiving BCBA certification. She aims to bring the best standards of intensive behavioural treatment for children with behavioural difficulties and children diagnosed with autism across various setting (e.g. clinic, home and school). 
+	</p>
+</div>
+  </div>
+  </div>
+  
+  <div class="overlay"style="background-color:#D7F9FB;">
+  <div class="container">
+    <div class="col-sm-12"><h2>What we do and what will our services include?</h2>
+	<p>
+Your child will receive a comprehensive assessment (Verbal Behaviour Milestones Assessment and Placement Program VBMAPP) at the onset service. This assessment involves identifying the skills that your child needs to learn (e.g., language, social skills, self-help skills) and then designing an individual curriculum to teach those skills. Your child will receive this complimentary assessment every 9 months to monitor their skill development. Curriculum will be reviewed weekly in a team meeting and new programmes will be added according to the child’s progress.
+	</p>
+</div>
+  </div>
+  </div>
+<!-- Team          https://bootsnipp.com/snippets/92xNm-->
+<section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1">OUR TEAM</h5>
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                    <h4 class="card-title">Sarah Jones</h4>
+                                    <p class="card-text">Consultant</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sarah Jones</h4>
+                                    <p class="card-text">As a supervisor, Michelle oversees individualised Applied Behavioural Analysis (ABA) programmes for the children on her caseload. Michelle has experience working with a range of children on the spectrum as a therapist and was also involved in the organization of external events and public presentations.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image"></p>
+                                    <h4 class="card-title">Bob Jones</h4>
+                                    <p class="card-text">Supervisor</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Bob Jones</h4>
+                                    <p class="card-text">As a supervisor, Michelle oversees individualised Applied Behavioural Analysis (ABA) programmes for the children on her caseload. Michelle has experience working with a range of children on the spectrum as a therapist and was also involved in the organization of external events and public presentations.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
+                                    <h4 class="card-title">Michelle Peterson</h4>
+                                    <p class="card-text">Therapist</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Michelle	Peterson</h4>
+                                    <p class="card-text">As a supervisor, Michelle oversees individualised Applied Behavioural Analysis (ABA) programmes for the children on her caseload. Michelle has experience working with a range of children on the spectrum as a therapist and was also involved in the organization of external events and public presentations.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_04.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Michael Jones</h4>
+                                    <p class="card-text">Therapist</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Michael Jones</h4>
+                                    <p class="card-text">As a supervisor, Michelle oversees individualised Applied Behavioural Analysis (ABA) programmes for the children on her caseload. Michelle has experience working with a range of children on the spectrum as a therapist and was also involved in the organization of external events and public presentations.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png" alt="card image"></p>
+                                    <h4 class="card-title">Asif Javed</h4>
+                                    <p class="card-text">Therapist</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Asif Javed</h4>
+                                    <p class="card-text">As a supervisor, Michelle oversees individualised Applied Behavioural Analysis (ABA) programmes for the children on her caseload. Michelle has experience working with a range of children on the spectrum as a therapist and was also involved in the organization of external events and public presentations.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Andrew Hales</h4>
+                                    <p class="card-text">Therapist</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Andrew Hales</h4>
+                                    <p class="card-text">As a supervisor, Michelle oversees individualised Applied Behavioural Analysis (ABA) programmes for the children on her caseload. Michelle has experience working with a range of children on the spectrum as a therapist and was also involved in the organization of external events and public presentations.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+
+        </div>
+    </div>
+</section>
+<!-- Team -->
+</body>
+<!-------------------------------------------------------->
+
+
+<!--------------------FOOTER------------------------------------>
+<footer>
+	<div class="container-fluid sec-1 text-center">
+		<p>©2019 Diego Pitsillidis</p>
+	</div>
+</footer
+
+</html>

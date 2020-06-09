@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AUSOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" media="all" href="css/styleabout.css" />
+
+</head>
+<body>
+
+<!-------------MENU       https://startbootstrap.com/snippets/video-header/--------------->
+
+<nav class="navbar navbar-transparent navbar-fixed-top animated fadeIn">
+	<div class="topnav" id="myTopnav">
+		<a href="index.html" class="logo"><h4><b>AUSOME</b></h4></a>
+		<a href="testimonials.html"><h4>Testimonials</h4></a>
+		<a href="careers.html"><h4>Careers</h4></a>
+		<a href="about.html"><h4>About</h4></a>
+		<a href="contact.html" role="button" class="btn btn-info btn-lg contact">Contact Us</a>
+		<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+</nav>
+
+<!-------------Script for dropdown for mobile--------------->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+</script>
+<!------------------------------------------>
+
+<!-----------------------Script for menu transition--------------------------------->
+<script>
+var $document = $(document),
+	$element = $('.navbar'),
+	navbarDefault = 'navbar-default';
+	navbarTransparent = 'navbar-transparent';
+	
+	fadeInDown = 'fadeInDown';
+	
+$document.scroll(function() 
+{
+	if ($document.scrollTop() >=100) 
+	{
+		$element.addClass(navbarDefault);
+		$element.removeClass(navbarTransparent);
+		
+		$element.addClass(fadeInDown);
+	}
+	else
+	{
+		$element.addClass(navbarTransparent);
+		$element.removeClass(navbarDefault);
+		
+		$element.removeClass(fadeInDown);
+	}
+});
+</script>
+<!------------------------------------------>
+
+<!--------------WELCOME VIDEO----------------->
+<header>
+  <div class="overlay">
+		<img src="media/careers3.jpg" alt="careers" class="img-responsive">
+  </div>
+</header>
+<!-------------------------------------------------------->
+
+
+<!-----------------------CONTENT--------------------------------->
+  <div class="overlay" style="background-color:#D7F9FB; height: 400px;">
+  <div class="container">
+    <div class="col-sm-12" style="padding-top: 8%"><h2>CAREERS AT AUSOME</h2>
+	<p>
+Do you love working with children? Do you want to bring positive change to the lives of individuals with autism? Then we want you!
+AUSOME is continuously expanding, and we would love for you to join us in our cause to provide world-class services to individuals with autism and their families!
+	</p>
+	</div>
+	</div>
+  </div>
+  
+<div class="overlay"style="background-color:#A0D5E8; height: 500px;">
+	<div class="container">
+		<div class="col-sm-12" style="padding-top: 15%"><h2>How do I apply?</h2>
+			<p>
+				Email Us at careers@ausome.com with your resume and we will respond as soon as we can! 
+			</p>
+		</div>
+	</div>
+</div>
+
+</body>
+<!-------------------------------------------------------->
+
+
+<!--------------------FOOTER------------------------------------>
+<footer>
+	<div class="container-fluid sec-1 text-center">
+		<p>©2019 Diego Pitsillidis</p>
+	</div>
+</footer
+
+</html>

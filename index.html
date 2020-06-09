@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AUSOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+</head>
+<body>
+
+<!-------------MENU--------------->
+
+<nav class="navbar navbar-transparent navbar-fixed-top animated fadeIn">
+	<div class="topnav" id="myTopnav">
+		<a href="index.html" class="logo"><h4><b>AUSOME</b></h4></a>
+		<a href="testimonials.html"><h4>Testimonials</h4></a>
+		<a href="careers.html"><h4>Careers</h4></a>
+		<a href="about.html"><h4>About</h4></a>
+		<a href="contact.html" role="button" class="btn btn-info btn-lg contact">Contact Us</a>
+		<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+</nav>
+
+<!-------------Script for dropdown for mobile--------------->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+</script>
+<!------------------------------------------>
+
+<!-----------------------Script for menu transition--------------------------------->
+<script>
+var $document = $(document),
+	$element = $('.navbar'),
+	navbarDefault = 'navbar-default';
+	navbarTransparent = 'navbar-transparent';
+	
+	fadeInDown = 'fadeInDown';
+	
+$document.scroll(function() 
+{
+	if ($document.scrollTop() >=100) 
+	{
+		$element.addClass(navbarDefault);
+		$element.removeClass(navbarTransparent);
+		
+		$element.addClass(fadeInDown);
+	}
+	else
+	{
+		$element.addClass(navbarTransparent);
+		$element.removeClass(navbarDefault);
+		
+		$element.removeClass(fadeInDown);
+	}
+});
+</script>
+<!------------------------------------------>
+
+<!--------------WELCOME VIDEO          https://startbootstrap.com/snippets/video-header/----------------->
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="media/welcomevideo.mp4" type="video/mp4">
+  </video>
+  </div>
+</header>
+<!-------------------------------------------------------->
+
+
+<!-----------------------CONTENT--------------------------------->
+  
+  <div class="container">
+    <div class="col-sm-12" style="background-color:white;"><h2>What is ABA?</h2>
+<p>Applied Behaviour Analysis (ABA) is the scientific study of behaviours and learning with the goal to understand how behaviour works in a real situation, how behaviour is affected by the environment and how learning takes place.
+ABA is a flexible treatment that involves many techniques for understanding and changing behaviour:
+<ul>
+  <li>Adapted and individualised to meet the needs of each person</li>
+  <li>Provided in various settings – Home, school and in the community</li>
+  <li>Teaches skills used in everyday life- social skills, academic skills and communication</li>
+  <li>Structured teaching technique that breaks down skills into small “discrete” components</li>
+  <li>Involve one-to-one teaching or group instruction</li>
+</ul>
+</p>
+</div>
+</div>
+
+  
+
+
+  <div class="container">
+    <div class="col-sm-12" style="background-color:white;"><h2>Who is it for?</h2>
+	<p>
+ABA is effective for children and adults with psychological disorders in a variety of settings, including schools, workplaces, homes, and clinics. 
+	</p>
+</div>
+  </div>
+  
+  <div class="container">
+
+    <div class="col-sm-12" style="background-color:white;"><h2>Does my child need a formal diagnosis to receive services?</h2>
+	<p>
+No. No documentation of diagnosis is required for your child to receive services. Children from the age of 3 to 7 will be eligible to receive services if parents have concerns that their child is constantly having behavioural challenges in school, not meeting developmental milestones or suspected that the child might be on the autistic spectrum.
+	</p>
+</div>
+  </div>
+  
+  <div class="container">
+    <div class="col-sm-12" style="background-color:white;"><h2>How many hours of consultation should my child receive per week?</h2>
+	<p>
+We can arrange consultation for your child once a week, 3 hours per consultation depending on available space. We recommend that children should receive these hours of consultation per week in order for consistent therapists training, tracking of your child’s development and progress as well as discussion of potential behavioural issues. However, we do understand that the number of consultation hours may varies across families due to personal reasons.  The management team will work with you to determine the number of hours that will be best suited to client’s personal situation.
+	</p>
+</div>
+  </div>
+  
+  
+  <div class="container">
+    <div class="col-sm-12" style="background-color:white;"><h2>Is ABA a valid treatment?</h2>
+	<p>
+To date, there are many research studies that have demonstrate the effectiveness of ABA in helping children with learning difficulties (e.g., challenging behaviours or autism) improve their skills in the area of: 
+<ul>
+  <li>Academic, language and communication skills</li>
+  <li>Enhance attention, focus and social skills</li>
+  <li>Decrease problematic behaviours (e.g., tantrums or self-injury)</li>
+</ul>
+</p>
+</div>
+  </div>
+  
+  
+
+
+</body>
+<!-------------------------------------------------------->
+
+
+<!--------------------FOOTER------------------------------------>
+<footer>
+	<div class="container-fluid sec-1 text-center">
+		<p>©2019 Diego Pitsillidis</p>
+	</div>
+
+</footer
+
+</html>

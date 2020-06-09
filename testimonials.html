@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AUSOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" media="all" href="css/styleabout.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/styletestimonials.css" />
+
+</head>
+<body>
+
+<!-------------MENU--------------->
+
+<nav class="navbar navbar-transparent navbar-fixed-top animated fadeIn">
+	<div class="topnav" id="myTopnav">
+		<a href="index.html" class="logo"><h4><b>AUSOME</b></h4></a>
+		<a href="testimonials.html"><h4>Testimonials</h4></a>
+		<a href="careers.html"><h4>Careers</h4></a>
+		<a href="about.html"><h4>About</h4></a>
+		<a href="contact.html" role="button" class="btn btn-info btn-lg contact">Contact Us</a>
+		<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+</nav>
+
+<!-------------Script for dropdown for mobile--------------->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+</script>
+<!------------------------------------------>
+
+<!-----------------------Script for menu transition--------------------------------->
+<script>
+var $document = $(document),
+	$element = $('.navbar'),
+	navbarDefault = 'navbar-default';
+	navbarTransparent = 'navbar-transparent';
+	
+	fadeInDown = 'fadeInDown';
+	
+$document.scroll(function() 
+{
+	if ($document.scrollTop() >=100) 
+	{
+		$element.addClass(navbarDefault);
+		$element.removeClass(navbarTransparent);
+		
+		$element.addClass(fadeInDown);
+	}
+	else
+	{
+		$element.addClass(navbarTransparent);
+		$element.removeClass(navbarDefault);
+		
+		$element.removeClass(fadeInDown);
+	}
+});
+</script>
+
+<!------------------------------------------>
+
+<!-----------------------Script for row transition--------------------------------->
+<script>
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.fade').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1'},500);
+            }
+            
+        }); 
+    });
+});
+</script>
+
+<!------------------------------------------>
+
+<!--------------WELCOME VIDEO        https://startbootstrap.com/snippets/video-header/----------------->
+<header>
+  <div class="overlay">
+		<img src="media/testimonials.jpg" alt="careers" class="img-responsive">
+  </div>
+</header>
+<!-------------------------------------------------------->
+
+
+<!--------------CAROUSEL               https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=testimonial-carousel---------------------------------->
+<div class="container" id="carousel">
+	<div class="row">
+		<div class="col-md-8 col-center m-auto">
+			<h2 id="carousel">Testimonials</h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>   
+				<!-- Wrapper for carousel items -->
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<div class="img-box"><img src="media/1.jpg" alt=""></div>
+						<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+						<p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+					</div>
+					<div class="item carousel-item">
+						<div class="img-box"><img src="media/2.jpg" alt=""></div>
+						<p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+						<p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+					</div>
+					<div class="item carousel-item">
+						<div class="img-box"><img src="media/3.jpg" alt=""></div>
+						<p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+						<p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+					</div>
+				</div>
+				<!-- Carousel controls -->
+				<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>                             		                            
+<!-------------------------------------------------------->
+<hr>
+
+<!-----------------------CONTENT--------------------------------->
+<div class="overlay" style="background-color:#D7F9FB;">
+<div class="container">
+<div class="row">
+<div class="column col-sm-6">
+	
+		<div class="col-sm-12 fade">
+		<h2>Excellent and professional team</h2>
+			<p>
+				Our daughter and my family would like to express our heartfelt gratitude for the excellent work and professionalism that the AUSOME team has constantly practised and will hopefully continue to do so in the future.We wish AUSOME all the very best in all your endeavours, and God-willing, we will meet again when we return to Wales. May God bless your good and kind efforts.
+			</p>
+		</div>
+		
+		<div class="col-sm-12 fade">
+		<img src="media/testimonials1.jpg" alt="careers" class="img-responsive">
+		</div>
+
+
+		<div class="col-sm-12 fade">
+		<h2>A thorough and proper assessment for my child!</h2>
+			<p>
+The way the assessment at AUSOME was conducted along with the outcome was completely different to our previous experience. AUSOME took more than 2 hours to do a thorough assessment using the proper assessment tools that were not used by the previous doctor. Surprisingly AUSOME found that while my son showed some signs of autism, he not fulfil the complete requirements and instead gave us specific strategies and recommendations to help him.
+			</p>
+		</div>
+
+
+		
+
+
+		<div class="col-sm-12 fade">
+		<h2>He had grown into a bubbly, witty and happy seven year old</h2>
+			<p>
+I am glad I discovered it before it was too late for my little boy.
+			</p>
+		</div>
+
+		
+
+		<div class="col-sm-12 fade">
+		<h2>AUSOME has shown us that there is hope</h2>
+			<p>
+In just 3 months we have seen a number of improvements. His poor eye contact is now on par with a typical child. He had little or no imitation skills but now these skills are out-standing. He is becoming increasingly more social with children his own age. When he started the programme he had zero words – he now tries to say 6 different words. A big step in 3 months.
+			</p>
+		</div>
+
+
+		
+	
+
+
+		<div class="col-sm-12 fade">
+		<h2>A Round of Gratitude for Your Commitment and Professionalism!</h2>
+			<p>
+AUSOME has shown commitment and very professional service in administrating all their programs. Their programs are very structured with proper plans and records. Supervisors are very skilled, knowledgeable and most importantly helpful. Both my son and daughter have benefited a lot under AUSOME’s program. Thank you with all our hearts.
+			</p>
+		</div>
+
+	
+
+		<div class="col-sm-12 fade">
+		<h2>Thank you!</h2>
+			<p>
+She has learnt to sit down at the table by listening to the therapist. She picked up toileting skills and has improved on eye contact.
+			</p>
+		</div>
+	</div>
+
+	
+	<div class="column col-sm-6">
+
+		<div class="col-sm-12 fade">
+		<h2>Thank You for Your Commitment to Our Son. Our Son Enjoys Sessions Very Much!</h2>
+			<p>
+We feel that ABA has helped improve a lot of daily skills for our son. Therapists from AUSOME have professionally and playfully implemented the ABA programs to achieve that. He is doing so much just after 6 months. For the therapy to be successful, commitments from parents and AUSOME therapists are needed. We are grateful for their commitments and regular check/ review on the things to do and concentrate on to ensure success.
+			</p>
+		</div>
+
+
+		
+
+
+		<div class="col-sm-12 fade">
+		<h2>Vast Language Improvement</h2>
+			<p>
+He has starting having more language than what he had before ABA. He can now do some activities on his own and interacts well with children his age as oppose to only adults previously. He looks forward to his sessions at AUSOME daily because the therapist makes him feel comfortable.
+			</p>
+		</div>
+
+	
+
+		
+	
+
+		<div class="col-sm-12 fade">
+		<h2>Overcoming Difficulties One Step at a Time</h2>
+			<p>
+When my son was diagnosed to have autism, he was struggling and lagging far behind in a mainstream kindergarten. He also had difficulties with communication, aversion to certain foods and other behaviours associated with autism. Since starting ABA at AUSOME, we have watched him develop and work through these difficulties, one small step at a time. He has only been with AUSOME for 7 months but the difference is remarkable. We also understand him better and know how to help him. We have great hopes that he will grow up to be successful and lead a fulfilling life. He has just been re-enrolled in a mainstream kindergarten. Good job guys!
+			</p>
+		</div>
+
+	
+
+		<div class="col-sm-12 fade">
+		<h2>Maximized Potential</h2>
+			<p>
+Each child progresses in a different way and although Timothy’s progress has not skyrocketed, I believe that ABA has maximized his potential.
+			</p>
+		</div>
+
+
+	
+
+
+		<div class="col-sm-12 fade">
+		<h2>An All-Round Approach</h2>
+			<p>
+We have received tremendous patience and support from the AUSOME staff known to us, their compassion and kindness never detracting from their professionalism. It was a good day when AUSOME came into our lives.
+			</p>
+		</div>
+
+		<div class="col-sm-12 fade">
+		<img src="media/testimonials2.jpg" alt="careers" class="img-responsive">
+		</div>
+
+		<div class="col-sm-12 fade">
+		<h2>AUSOME made an enormous difference</h2>
+			<p>
+We are very grateful that AUSOME is providing much-needed services for children on the autism spectrum in KL.  AUSOME’s presence was a decisive factor — indeed, the decisive factor — in our decision to accept a posting here.
+			</p>
+		</div>
+
+	</div>
+	
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
+  
+
+</body>
+<!-------------------------------------------------------->
+<br>
+<br>
+<br>
+
+<!--------------------FOOTER------------------------------------>
+<footer>
+	<div class="container-fluid sec-1 text-center">
+		<p>©2019 Diego Pitsillidis</p>
+	</div>
+</footer
+
+</html>
